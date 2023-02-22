@@ -3,6 +3,7 @@ package com.athttt.utils;
 
 
 import java.util.Collection;
+import java.util.Map;
 
 import com.athttt.constant.SystemConstant;
 
@@ -30,5 +31,8 @@ public class ValidateUtils {
 
     public static <T> boolean isNotEmpty(Collection<T> collection) {
         return null != collection && !collection.isEmpty();
+    }
+    public static boolean isEmptyMap (Map<String, Object> map) {
+    	return map == null || map.keySet().size() == 0;
     }
 }

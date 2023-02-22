@@ -2,8 +2,14 @@ package com.athttt.entity;
 
 import java.sql.Date;
 
+import com.athttt.annotation.Column;
+import com.athttt.annotation.Entity;
+
+@Entity
 public class BaseEntity {
+	@Column(name = "id")
 	private int id;
+	@Column(name = "createddate")
 	private Date createdDate;
 	public int getId() {
 		return id;

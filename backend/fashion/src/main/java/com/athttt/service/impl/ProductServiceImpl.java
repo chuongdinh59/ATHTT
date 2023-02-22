@@ -1,6 +1,7 @@
 package com.athttt.service.impl;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
@@ -11,9 +12,10 @@ import com.athttt.service.ProductService;
 public class ProductServiceImpl implements ProductService{
 
 	@Override
-	public List<ProductEntity> getProducts() {
+	public List<ProductEntity> getProducts(Map<String, Object> searchMap) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
 
 }
