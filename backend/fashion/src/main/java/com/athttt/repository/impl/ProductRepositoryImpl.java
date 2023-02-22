@@ -101,8 +101,8 @@ public class ProductRepositoryImpl extends CommonRepositoryImpl<ProductEntity> i
 		ProductRepositoryImpl s = new ProductRepositoryImpl();
 		Map<String, Object> searchMap = new HashMap<>();
 		searchMap.put("categoryId", 6);
-//		searchMap.put("name", "Đồng hồ");
-//		searchMap.put("supplier", "Cellph");
+		searchMap.put("name", "Đồng hồ");
+		searchMap.put("supplier", "Cellph");
 		searchMap.put("minPrice", 20000);
 		for ( ProductEntity p : s.getProducts(searchMap)) {
 			System.out.println(p.getName());
