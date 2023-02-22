@@ -1,3 +1,5 @@
-function queryElement(className) {
-  return document.querySelector("." + className);
-}
+const getElement = (selector, parent = document) => {
+  return parent.querySelector(selector);
+};
+
+export default getElement;
