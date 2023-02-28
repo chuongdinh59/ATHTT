@@ -22,19 +22,24 @@ public class ProductRepositoryImpl extends CommonRepositoryImpl<ProductEntity> i
 		if (ValidateUtils.isEmptyMap(searchMap)) {
 			return super.findAll();
 		}
-		
 		StringBuilder fromStatement = buildFromStatment(searchMap);
 		StringBuilder whereStatement = buildSpecialField(searchMap).append(buildNormalField(searchMap));
-		StringBuilder query = new StringBuilder("SELECT p.* \n").append(fromStatement).append(whereStatement);
+		StringBuilder query = new StringBuilder("SELECT p.*")
+				.append(fromStatement).append(whereStatement).append(buildPanigate(page));
 		
 		System.out.println(query.toString());
 		productEntities = super.findByCondition(query.toString());
 		return productEntities;
 	}
+	public String buildPanigate (Integer page) {
+		page = page == null ? 1 : page;
+		int skip = (page - 1) * 1;
+		return String.format("%nLIMIT %s OFFSET %s", 1 ,skip);
+	}
 
 	public StringBuilder buildFromStatment(Map<String, Object> searchMap) {
 //		List<String> params = getSpecialSearchParams();
-		StringBuilder fromStatement = new StringBuilder("FROM Product p");
+		StringBuilder fromStatement = new StringBuilder("\nFROM Product p");
 		for (String key : searchMap.keySet()) {
 			if (key.equals("categoryId")) {
 				fromStatement.append("\nJOIN Category c ON p.category_id = c.id");
@@ -66,7 +71,7 @@ public class ProductRepositoryImpl extends CommonRepositoryImpl<ProductEntity> i
 		StringBuilder whereStatement = new StringBuilder();
 		List<String> specialParams = getSpecialSearchParams();
 		for (String key : searchMap.keySet()) {
-			if (!specialParams.contains(key.toString().toLowerCase())) {
+			if (!key.equals("page") && !specialParams.contains(key.toString().toLowerCase())) {
 				Object value = searchMap.get(key);
 				if (value instanceof String) {
 					whereStatement.append(QueryBuilderUtils.withLike("p." + key.toString(), value.toString()));

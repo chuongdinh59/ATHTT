@@ -22,6 +22,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<ProductModel> getProducts(Map<String, Object> searchMap, Integer page) {
 		List<ProductEntity> listProductEntity = productRepository.getProducts(searchMap, page);
+		if (listProductEntity == null) return new ArrayList<>();
 		// convert ProductEntity to Product Model
 		List<ProductModel> listProductModel = new ArrayList<>();
 		listProductEntity.forEach(item -> {

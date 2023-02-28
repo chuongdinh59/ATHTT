@@ -13,14 +13,14 @@ import com.athttt.model.ProductModel;
 import com.athttt.service.ProductService;
 import com.athttt.service.impl.ProductServiceImpl;
 
-@RestController
-@RequestMapping("/api/product")
+@RestController("/api/product")
 public class ProductAPI {
 
 	ProductService productService = new ProductServiceImpl();
 	@GetMapping
 	public List<ProductModel> getProducts(@RequestParam Map<String, Object> reqParam, 
 			@RequestParam(value = "page", required = false) Integer page) {
+		System.out.println(page);
 		List<ProductModel> productList = productService.getProducts(reqParam, page);
 		return productList;
 	}

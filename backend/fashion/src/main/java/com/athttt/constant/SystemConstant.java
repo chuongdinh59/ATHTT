@@ -10,7 +10,7 @@ public class SystemConstant {
     public static final String AND_STATEMENT = "\nAND ";
     public static final String BUILDING_ALIAS = "b.";
     public static final String EMPTY_STRING = "";
-    
+    public static final Integer PAGE_SIZE = 12; 
     
     
 	public static final int ACTIVE_STATUS = 1;
