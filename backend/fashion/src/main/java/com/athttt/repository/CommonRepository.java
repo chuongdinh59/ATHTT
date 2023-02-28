@@ -5,13 +5,13 @@ import java.util.List;
 public interface CommonRepository<T> {
 	List<T> findAll();
 
-	T findById(Long id);
+	T findById(Integer id);
 
 	List<T> findByCondition(String sql);
 
-	Long insert(Object object);
+	Integer insert(Object object);
 
 	void update(Object object);
 
-	void delete(Long id);
+	void delete(Integer id);
 }

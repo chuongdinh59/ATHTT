@@ -56,7 +56,7 @@ public class CommonRepositoryImpl<T> implements CommonRepository<T> {
 	}
 
 	@Override
-	public T findById(Long id) {
+	public T findById(Integer id) {
 		String tableName = getTableName();
 		if (tableName == null) {
 			return null;
@@ -109,7 +109,7 @@ public class CommonRepositoryImpl<T> implements CommonRepository<T> {
 	}
 
 	@Override
-	public void delete(Long id) {
+	public void delete(Integer id) {
 		String tableName = getTableName();
 		if (tableName == null) {
 			return;
@@ -150,7 +150,7 @@ public class CommonRepositoryImpl<T> implements CommonRepository<T> {
 			// Scan parent's fields
 			Class<?> parentClass = tClass.getSuperclass();
 			Field[] parentFields = parentClass.getDeclaredFields();
-			Long id = null;
+			Integer id = null;
 			while (parentClass != null && parentClass.isAnnotationPresent(Entity.class)) {
 				for (Field field : parentFields) {
 					field.setAccessible(true);
@@ -159,7 +159,7 @@ public class CommonRepositoryImpl<T> implements CommonRepository<T> {
 					if (!field.getName().equals("id")) {
 						pstmt.setObject(paramIndex++, field.get(object));
 					} else {
-						id = (Long) field.get(object);
+						id = (Integer) field.get(object);
 					}
 				}
 				parentClass = parentClass.getSuperclass();
@@ -179,7 +179,7 @@ public class CommonRepositoryImpl<T> implements CommonRepository<T> {
 	}
 
 	@Override
-	public Long insert(Object object) {
+	public Integer insert(Object object) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -217,7 +217,7 @@ public class CommonRepositoryImpl<T> implements CommonRepository<T> {
 			int flag = pstmt.executeUpdate();
 			if (flag > 0) {
 				rs = pstmt.getGeneratedKeys();
-				return rs.next() ? rs.getLong(1) : null;
+				return rs.next() ? rs.getInt(1) : null;
 			}
 
 		} catch (SQLException | IllegalArgumentException | IllegalAccessException e) {

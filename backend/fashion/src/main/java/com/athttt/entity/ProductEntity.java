@@ -77,11 +77,11 @@ public class ProductEntity extends BaseEntity {
 		this.supplier = supplier;
 	}
 
-	public Integer getCategory_id() {
+	public Integer getCategoryId() {
 		return categoryId;
 	}
 
-	public void setCategory_id(Integer category_id) {
+	public void setCategoryId(Integer category_id) {
 		this.categoryId = category_id;
 	}
 

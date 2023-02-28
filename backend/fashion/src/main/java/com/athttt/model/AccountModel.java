@@ -1,15 +1,7 @@
-package com.athttt.entity;
+package com.athttt.model;
 
-import com.athttt.annotation.Column;
-import com.athttt.annotation.Entity;
-import com.athttt.annotation.Table;
-
-@Entity
-@Table(name = "users")
-public class AccountEntity extends BaseEntity{
-	@Column(name = "username")
+public class AccountModel extends BaseModel{
 	private String username;
-	@Column(name = "password")
 
 	private String password;
 
@@ -28,5 +20,4 @@ public class AccountEntity extends BaseEntity{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 }

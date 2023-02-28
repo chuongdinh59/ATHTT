@@ -3,6 +3,7 @@ package com.athttt.utils;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class QueryBuilderUtils {
 	public static String withLike(String column, String value) {
 		return (!ValidateUtils.isValid(value)) ? "" : String.format("%nAND %s LIKE %s", column, "'%" + value + "%'");
@@ -36,6 +37,7 @@ public class QueryBuilderUtils {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	public static <T> String withIn(String column, List<T> values) {
 		List<Object> convertedValues = new ArrayList<>();
 		String joinValues;

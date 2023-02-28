@@ -3,9 +3,9 @@ package com.athttt.service;
 import java.util.List;
 import java.util.Map;
 
-import com.athttt.entity.ProductEntity;
+import com.athttt.model.ProductModel;
 
 public interface ProductService {
-	List<ProductEntity> getProducts(Map<String, Object> searchMap);
-	
+	List<ProductModel> getProducts(Map<String, Object> searchMap, Integer page);
+	ProductModel getProduct(Integer id);
 }

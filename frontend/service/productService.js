@@ -11,6 +11,7 @@ const productService = {
   },
 };
 
+export default productService;
 // Example
 
 // import fetchApi from "./fetchApi";

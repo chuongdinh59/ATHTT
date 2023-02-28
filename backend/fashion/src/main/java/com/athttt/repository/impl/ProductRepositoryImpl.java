@@ -1,27 +1,24 @@
 package com.athttt.repository.impl;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import com.athttt.constant.SystemConstant;
 import com.athttt.entity.ProductEntity;
-import com.athttt.service.ProductService;
+import com.athttt.enums.SpecialSearchParamsEnum;
+import com.athttt.repository.ProductRepository;
 import com.athttt.utils.MapUtils;
 import com.athttt.utils.QueryBuilderUtils;
 import com.athttt.utils.ValidateUtils;
 
-import enums.SpecialSearchParamsEnum;
 
-public class ProductRepositoryImpl extends CommonRepositoryImpl<ProductEntity> implements ProductService {
+
+public class ProductRepositoryImpl extends CommonRepositoryImpl<ProductEntity> implements ProductRepository {
 
 	@Override
-	public List<ProductEntity> getProducts(Map<String, Object> searchMap) {
+	public List<ProductEntity> getProducts(Map<String, Object> searchMap, Integer page) {
 		List<ProductEntity> productEntities = new ArrayList<>();
-		/*
-		 * search map is empty return all product *Note: panigation later
-		 */
 		if (ValidateUtils.isEmptyMap(searchMap)) {
 			return super.findAll();
 		}
@@ -93,20 +90,12 @@ public class ProductRepositoryImpl extends CommonRepositoryImpl<ProductEntity> i
 
 		return params;
 	}
-	
-	
-	
-	public static void main(String[] args) {
-		/* TEST */
-		ProductRepositoryImpl s = new ProductRepositoryImpl();
-		Map<String, Object> searchMap = new HashMap<>();
-		searchMap.put("categoryId", 6);
-		searchMap.put("name", "Đồng hồ");
-		searchMap.put("supplier", "Cellph");
-		searchMap.put("minPrice", 20000);
-		for ( ProductEntity p : s.getProducts(searchMap)) {
-			System.out.println(p.getName());
-		}
-	
+
+	@Override
+	public ProductEntity getById(Integer id) {
+		// TODO Auto-generated method stub
+		return super.findById(id);
 	}
+	
+
 }

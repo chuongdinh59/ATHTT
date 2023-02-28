@@ -1,21 +1,40 @@
 package com.athttt.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
+import com.athttt.converter.ProductConverter;
 import com.athttt.entity.ProductEntity;
+import com.athttt.model.ProductModel;
+import com.athttt.repository.ProductRepository;
+import com.athttt.repository.impl.ProductRepositoryImpl;
 import com.athttt.service.ProductService;
 
 @Service
-public class ProductServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService {
 
+	ProductRepository productRepository = new ProductRepositoryImpl();
+	ProductConverter productConverter = new ProductConverter();
+	
 	@Override
-	public List<ProductEntity> getProducts(Map<String, Object> searchMap) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<ProductModel> getProducts(Map<String, Object> searchMap, Integer page) {
+		List<ProductEntity> listProductEntity = productRepository.getProducts(searchMap, page);
+		// convert ProductEntity to Product Model
+		List<ProductModel> listProductModel = new ArrayList<>();
+		listProductEntity.forEach(item -> {
+			ProductModel target = productConverter.entityToModel(item, ProductModel.class);
+			listProductModel.add(target);
+		});
+		return listProductModel;
 	}
-
+	public ProductModel getProduct(Integer id) {
+		if (id == null) return null;
+		ProductEntity productEntity = productRepository.getById(id);
+		ProductModel productModel = productConverter.entityToModel(productEntity, ProductModel.class);
+		return productModel;
+	}
 
 }

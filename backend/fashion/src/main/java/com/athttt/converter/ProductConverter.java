@@ -1,13 +1,20 @@
 package com.athttt.converter;
 
-import com.athttt.entity.ProductEntity;
+import org.modelmapper.ModelMapper;
 
-public class ProductConverter extends BaseConverter<ProductEntity>{
+import com.athttt.entity.ProductEntity;
+import com.athttt.model.ProductModel;
+
+public class ProductConverter extends BaseConverter<ProductEntity> {
+	private ModelMapper modelMapper = new ModelMapper();
 
 	@Override
-	public Object entityToModel(ProductEntity object, Class<?> tClass) {
-		// TODO Auto-generated method stub
-		return null;
+	public ProductModel entityToModel(ProductEntity productEntity, Class<?> tClass) {
+
+		ProductModel productModel = modelMapper.map(productEntity, ProductModel.class);
+		productModel.setId(productEntity.getId());
+		productModel.setCategory(productEntity.getCategoryId());
+		return productModel;
 	}
-	
+
 }
