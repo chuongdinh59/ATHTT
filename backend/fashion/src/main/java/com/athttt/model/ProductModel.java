@@ -1,6 +1,6 @@
 package com.athttt.model;
 
-public class  ProductModel extends BaseModel{
+public class ProductModel extends BaseModel {
 	private String name;
 
 	private String description;
@@ -14,6 +14,24 @@ public class  ProductModel extends BaseModel{
 	private String supplier;
 
 	private Integer categoryId;
+
+	private String thumbnail;
+
+	public String getThumbnail() {
+		return thumbnail;
+	}
+
+	public void setThumbnail(String thumbnail) {
+		this.thumbnail = thumbnail;
+	}
+
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
+
+	public void setCategoryId(Integer categoryId) {
+		this.categoryId = categoryId;
+	}
 
 	public String getName() {
 		return name;

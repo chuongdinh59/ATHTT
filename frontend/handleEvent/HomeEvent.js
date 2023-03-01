@@ -1,8 +1,9 @@
-import getElement from "../utils/queryElement";
-
+import getElement from "../utils/queryElement.js";
+import productService from "../service/productService.js";
 const HomeEvent = {
   onClickProduct() {
-    console.log("HOME EVENT");
+    productService.getProductById(2);
+    // console.log("VV");
   },
 };
 

@@ -1,9 +1,22 @@
-import fetchApi from "../utils/callAPI";
+import fetchApi from "../utils/callAPI.js";
 const productService = {
   getProduct() {
-    fetchApi("https://example.com/api/data")
+    fetchApi("http://localhost:8081/api/product")
       .then((response) => {
         // Xử lý dữ liệu trả về
+
+        console.log(response);
+      })
+      .catch((error) => {
+        // Xử lý lỗi
+      });
+  },
+  getProductById(id) {
+    fetchApi(`http://localhost:8081/api/product/${id}`)
+      .then((response) => {
+        // Xử lý dữ liệu trả về
+
+        console.log(response);
       })
       .catch((error) => {
         // Xử lý lỗi
@@ -12,27 +25,3 @@ const productService = {
 };
 
 export default productService;
-// Example
-
-// import fetchApi from "./fetchApi";
-
-// // Gửi yêu cầu GET đến API
-// fetchApi("https://example.com/api/data")
-//   .then((response) => {
-//     // Xử lý dữ liệu trả về
-//   })
-//   .catch((error) => {
-//     // Xử lý lỗi
-//   });
-
-// // Gửi yêu cầu POST đến API với dữ liệu
-// fetchApi("https://example.com/api/data", "POST", {
-//   name: "John Doe",
-//   email: "john.doe@example.com",
-// })
-//   .then((response) => {
-//     // Xử lý dữ liệu trả về
-//   })
-//   .catch((error) => {
-//     // Xử lý lỗi
-//   });

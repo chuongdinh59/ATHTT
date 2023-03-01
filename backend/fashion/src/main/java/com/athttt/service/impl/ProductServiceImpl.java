@@ -31,11 +31,15 @@ public class ProductServiceImpl implements ProductService {
 		});
 		return listProductModel;
 	}
-	public ProductModel getProduct(Integer id) {
+	public  ProductModel getProduct(Integer id) {
 		if (id == null) return null;
 		ProductEntity productEntity = productRepository.getById(id);
 		ProductModel productModel = productConverter.entityToModel(productEntity, ProductModel.class);
 		return productModel;
 	}
-
+//	public static void main(String[] args) {
+//		ProductService s = new ProductServiceImpl();
+//		ProductModel productModel = s.getProduct(3);
+//		System.out.println(productModel.getName());
+//	}
 }

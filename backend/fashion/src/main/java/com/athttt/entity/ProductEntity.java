@@ -28,6 +28,21 @@ public class ProductEntity extends BaseEntity {
 
 	@Column(name = "category_id")
 	private Integer categoryId;
+	
+	@Column(name = "thumbnail")
+	private String thumbnail;
+	
+	public String getThumbnail() {
+		return thumbnail;
+	}
+
+	public void setThumbnail(String thumbnail) {
+		this.thumbnail = thumbnail;
+	}
+
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
+	}
 
 	public String getName() {
 		return name;
