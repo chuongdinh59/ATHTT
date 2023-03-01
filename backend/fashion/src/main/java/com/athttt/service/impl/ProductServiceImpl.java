@@ -12,6 +12,7 @@ import com.athttt.model.ProductModel;
 import com.athttt.repository.ProductRepository;
 import com.athttt.repository.impl.ProductRepositoryImpl;
 import com.athttt.service.ProductService;
+import com.athttt.utils.ValidateUtils;
 
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -21,8 +22,9 @@ public class ProductServiceImpl implements ProductService {
 	
 	@Override
 	public List<ProductModel> getProducts(Map<String, Object> searchMap, Integer page) {
+		System.out.println("page service" + page);
 		List<ProductEntity> listProductEntity = productRepository.getProducts(searchMap, page);
-		if (listProductEntity == null) return new ArrayList<>();
+		if (!ValidateUtils.isNotEmpty(listProductEntity)) return new ArrayList<>();
 		// convert ProductEntity to Product Model
 		List<ProductModel> listProductModel = new ArrayList<>();
 		listProductEntity.forEach(item -> {

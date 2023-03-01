@@ -1,0 +1,134 @@
+[
+  {
+    "id": 2,
+    "name": "Đồng hồ CSX20",
+    "description": "Apple Watch SE 2022 44mm \nGPS viền nhôm chính là siêu phẩm với đầy sự tinh tế, \nhiện đại và đẳng cấp sẽ được nhà Táo cho ra mắt vào tháng \n9 năm nay. Với nhiều cập nhật nổi bật về thiết kế, nhiều \ncông nghệ màn hình hiện đại hơn và nhiều tiện ích mở \nrộng hơn được đưa ra thì đây chắc chắn chính là chiếc đồng hồ bạn nên lựa chọn. \nHãy tham khảo thêm cho mình một vài thông tin về chiếc đồng hồ này ngay sau đây \nđể có thể hiểu thêm về nó và các đặc tính nổi bật của nó nhé.",
+    "status": true,
+    "price": 72.62,
+    "quantity": 100,
+    "supplier": "CellphoneS",
+    "categoryId": 6,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677660803/fashion/product/applewatch_series_3_two_loop_full.jpg.og_goxtsy.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Apple Watch 15",
+    "description": "Apple Watch SE 2022 44mm ",
+    "status": true,
+    "price": 25.99,
+    "quantity": 20,
+    "supplier": "CellphoneS",
+    "categoryId": 6,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677660872/fashion/product/mvw-star-msa003-03-nam-0-600x600_ryqelm.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Jean pro2",
+    "description": "Hãy cùng khám phá bộ sưu tập quần độc đáo của chúng tôi! Mỗi chiếc quần đều được\n thiết kế với chất liệu cao cấp và kiểu dáng tinh tế, mang đến cho bạn cảm giác thoải mái và phong cách.\nChiếc quần dài đen của chúng tôi là một lựa chọn hoàn hảo cho các buổi tiệc hoặc sự kiện quan \ntrọng. Chất liệu vải cao cấp và đường may tỉ mỉ tạo nên sự sang trọng và đẳng cấp, trong khi kiểu \ndáng ôm sát vừa vặn với cơ thể giúp bạn trông thật quyến rũ và thu hút mọi ánh nhìn.\nNếu bạn đang tìm kiếm một chiếc quần thoải mái cho các hoạt động thể thao hoặc đi bộ, thì chiếc quần jogger\n của chúng tôi chắc chắn sẽ là lựa chọn tuyệt vời. Chất liệu vải co giãn và thiết kế lỏng lẻo giúp bạn cảm thấy thoải mái và dễ \n chịu trong suốt quá trình hoạt động.",
+    "status": true,
+    "price": 29.99,
+    "quantity": 12,
+    "supplier": "ABC Clothing",
+    "categoryId": 4,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655434/fashion/product/product-6_dhb4dd.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Jean rog1",
+    "description": "Hãy cùng khám phá bộ sưu tập quần độc đáo của chúng tôi! Mỗi chiếc quần đều được\n thiết kế với chất liệu cao cấp và kiểu dáng tinh tế, mang đến cho bạn cảm giác thoải mái và phong cách.\nChiếc quần dài đen của chúng tôi là một lựa chọn hoàn hảo cho các buổi tiệc hoặc sự kiện quan \ntrọng. Chất liệu vải cao cấp và đường may tỉ mỉ tạo nên sự sang trọng và đẳng cấp, trong khi kiểu \ndáng ôm sát vừa vặn với cơ thể giúp bạn trông thật quyến rũ và thu hút mọi ánh nhìn.\nNếu bạn đang tìm kiếm một chiếc quần thoải mái cho các hoạt động thể thao hoặc đi bộ, thì chiếc quần jogger\n của chúng tôi chắc chắn sẽ là lựa chọn tuyệt vời. Chất liệu vải co giãn và thiết kế lỏng lẻo giúp bạn cảm thấy thoải mái và dễ \n chịu trong suốt quá trình hoạt động.",
+    "status": true,
+    "price": 21.99,
+    "quantity": 200,
+    "supplier": "Diof Clothing",
+    "categoryId": 4,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655434/fashion/product/product-6_dhb4dd.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Jean pro_xv",
+    "description": "Hãy cùng khám phá bộ sưu tập quần độc đáo của chúng tôi! Mỗi chiếc quần đều được\n thiết kế với chất liệu cao cấp và kiểu dáng tinh tế, mang đến cho bạn cảm giác thoải mái và phong cách.\nChiếc quần dài đen của chúng tôi là một lựa chọn hoàn hảo cho các buổi tiệc hoặc sự kiện quan \ntrọng. Chất liệu vải cao cấp và đường may tỉ mỉ tạo nên sự sang trọng và đẳng cấp, trong khi kiểu \ndáng ôm sát vừa vặn với cơ thể giúp bạn trông thật quyến rũ và thu hút mọi ánh nhìn.\nNếu bạn đang tìm kiếm một chiếc quần thoải mái cho các hoạt động thể thao hoặc đi bộ, thì chiếc quần jogger\n của chúng tôi chắc chắn sẽ là lựa chọn tuyệt vời. Chất liệu vải co giãn và thiết kế lỏng lẻo giúp bạn cảm thấy thoải mái và dễ \n chịu trong suốt quá trình hoạt động.",
+    "status": true,
+    "price": 25.39,
+    "quantity": 32,
+    "supplier": "XYZ Clothing",
+    "categoryId": 4,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655434/fashion/product/product-6_dhb4dd.jpg"
+  },
+  {
+    "id": 7,
+    "name": "T-Shirt-ProA",
+    "description": "Chào mừng đến với bộ sưu tập áo thun của chúng tôi! Chúng tôi tự hào cung cấp các sản phẩm chất lượng cao, đa dạng về mẫu mã và kiểu dáng để đáp ứng nhu cầu của khách hàng.",
+    "status": true,
+    "price": 36.99,
+    "quantity": 72,
+    "supplier": "ShirtCore",
+    "categoryId": 1,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655434/fashion/product/product-9_qtugyt.jpg"
+  },
+  {
+    "id": 8,
+    "name": "BagLZ2",
+    "description": "Chào mừng đến với bộ sưu tập túi của chúng tôi! Chúng tôi cung cấp các loại túi đa dạng về kích thước, kiểu dáng và chất liệu, giúp bạn thoải mái lựa chọn túi phù hợp với nhu cầu của mình.",
+    "status": true,
+    "price": 82.99,
+    "quantity": 11,
+    "supplier": "LzBagGu",
+    "categoryId": 3,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655434/fashion/product/product-7_iss4qn.jpg"
+  },
+  {
+    "id": 9,
+    "name": "T-Shirt-Strx",
+    "description": "Chào mừng đến với bộ sưu tập áo thun của chúng tôi! Chúng tôi tự hào cung cấp các sản phẩm chất lượng cao, đa dạng về mẫu mã và kiểu dáng để đáp ứng nhu cầu của khách hàng.",
+    "status": true,
+    "price": 16.99,
+    "quantity": 200,
+    "supplier": "Guzzihaz",
+    "categoryId": 1,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655434/fashion/product/product-5_r56uhl.jpg"
+  },
+  {
+    "id": 10,
+    "name": "KidZx",
+    "description": "Chào mừng đến với bộ sưu tập túi của chúng tôi! Chúng tôi cung cấp các loại túi đa dạng về kích thước, kiểu dáng và chất liệu, giúp bạn thoải mái lựa chọn túi phù hợp với nhu cầu của mình.",
+    "status": true,
+    "price": 39.99,
+    "quantity": 25,
+    "supplier": "Kiddo",
+    "categoryId": 7,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655433/fashion/product/product-11_k75zxn.jpg"
+  },
+  {
+    "id": 11,
+    "name": "CuzPro_X",
+    "description": "Chào mừng đến với bộ sưu tập kính mát của chúng tôi! Chúng tôi tự hào cung cấp các sản phẩm chất lượng cao với đa dạng kiểu dáng và màu sắc để bạn dễ dàng tìm kiếm chiếc kính mát phù hợp với phong cách của mình.",
+    "status": true,
+    "price": 37.99,
+    "quantity": 39,
+    "supplier": "Lviz",
+    "categoryId": 6,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655433/fashion/product/product-14_ixx93z.jpg"
+  },
+  {
+    "id": 12,
+    "name": "CuzPro_XS",
+    "description": "Chào mừng đến với bộ sưu tập kính mát của chúng tôi! Chúng tôi tự hào cung cấp các sản phẩm chất lượng cao với đa dạng kiểu dáng và màu sắc để bạn dễ dàng tìm kiếm chiếc kính mát phù hợp với phong cách của mình.",
+    "status": true,
+    "price": 55.99,
+    "quantity": 12,
+    "supplier": "Lviz",
+    "categoryId": 6,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655433/fashion/product/product-14_ixx93z.jpg"
+  },
+  {
+    "id": 13,
+    "name": "UltraBoot4",
+    "description": "Chào mừng đến với Ultrabook adidas của chúng tôi! Được tạo ra từ sự kết hợp giữa thương hiệu thể thao hàng đầu và công nghệ hiện đại, Ultrabook adidas của chúng tôi sẽ đem lại cho bạn sự thoải mái và hiệu suất tuyệt vời trong mọi hoạt động của bạn.",
+    "status": true,
+    "price": 29.99,
+    "quantity": 33,
+    "supplier": "Addidas",
+    "categoryId": 5,
+    "thumbnail": "https://res.cloudinary.com/dzgugrqxz/image/upload/v1677655432/fashion/product/product-1_qtz6zz.jpg"
+  }
+]

@@ -1,7 +1,7 @@
 import fetchApi from "../utils/callAPI.js";
 const productService = {
   getProduct() {
-    fetchApi("http://localhost:8081/api/product")
+    fetchApi("../JSON/Product.json")
       .then((response) => {
         // Xử lý dữ liệu trả về
 

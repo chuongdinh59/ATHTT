@@ -2,7 +2,7 @@ import getElement from "../utils/queryElement.js";
 import productService from "../service/productService.js";
 const HomeEvent = {
   onClickProduct() {
-    productService.getProductById(2);
+    productService.getProductById(4);
     // console.log("VV");
   },
 };

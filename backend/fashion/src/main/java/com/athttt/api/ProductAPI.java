@@ -14,7 +14,7 @@ import com.athttt.model.ProductModel;
 import com.athttt.service.ProductService;
 import com.athttt.service.impl.ProductServiceImpl;
 
-@RestController
+@RestController()
 @RequestMapping("/api/product")
 @CrossOrigin(origins = "http://127.0.0.1:5500")
 
@@ -23,8 +23,9 @@ public class ProductAPI {
 
 	@GetMapping
 	public List<ProductModel> getProducts(@RequestParam Map<String, Object> reqParam,
-			@RequestParam(value = "page", required = false) Integer page) {
-		List<ProductModel> productList = productService.getProducts(reqParam, page);
+			@RequestParam(value = "page", defaultValue = "1", required = false) String page) {
+		
+		List<ProductModel> productList = productService.getProducts(reqParam, Integer.parseInt(page));
 		return productList;
 	}
 
